@@ -12,7 +12,7 @@ import logo from "./assets/logo.png";
 File Name: App.jsx
 Student Name: Ravindra Patil
 Student ID: 300611610
-Date: 2025-09-14
+Date: 2025-09-25
 
 Description: Handles interactive behavior for the portfolio site.
 */

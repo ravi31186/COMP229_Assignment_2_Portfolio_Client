@@ -1,15 +1,30 @@
 import './Contact.css'
 import { useNavigate } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { api } from "../lib/api"
 
 /*
 File Name: contact.js
 Student Name: Ravindra Patil
 Student ID: 300611610
-Date: 2025-09-14
+Date: 2025-09-25
 
 Description: Handles displaying contact page for the portfolio site.
 */
 export default function Contact() {
+
+    const [contact, setContacts] = useState([]);
+
+    useEffect(() => {
+        (async () => {
+        try {
+            const data = await api("/api/contact");
+            setContacts(data);
+        } catch (e) {
+            console.error("Error fetching services data:", e);
+        }
+        })();
+    }, []);
 
     const navigate = useNavigate();
 
@@ -23,11 +38,11 @@ export default function Contact() {
         <div class="row contact-page">
             {/* ======= Contact Detail ======= */}
             <div class="col-lg-6 contact-detail-container">
-                <h2>Contact Detail</h2>
+                <h2>{contact.header}</h2>
                 <ul>
-                    <li>Email: rpatil2@my.centennialcollege.ca</li>
-                    <li>Phone: (647)-6430-XXXX</li>
-                    <li>Location:  941 Progress Ave, Scarborough, ON M1G 3T8</li>
+                    <li>Email: {contact.email}</li>
+                    <li>Phone: {contact.phone}</li>
+                    <li>Location: {contact.location}</li>
                 </ul>
             </div>
 
