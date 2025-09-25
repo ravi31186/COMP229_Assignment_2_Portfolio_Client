@@ -1,0 +1,56 @@
+/*
+File Name: projects.css
+Student Name: Ravindra Patil
+Student ID: 300611610
+Date: 2025-09-14
+
+Description: Styles for the projects page of the portfolio site.
+*/
+
+.projects-container {
+    height: 700px;
+    overflow-y: scroll;
+
+    .header-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .card-row {
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    gap: 20px;
+    background: #fff;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    }
+
+    .card-row img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    }
+
+    .card-description {
+    flex: 1;
+    }
+
+    .card-description h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+    }
+
+    .card-description p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+    }
+}

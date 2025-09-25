@@ -1,0 +1,35 @@
+/*
+File Name: contact.css
+Student Name: Ravindra Patil
+Student ID: 300611610
+Date: 2025-09-14
+
+Description: Styles for the Contact page of the portfolio site.
+*/
+
+.contact-page {
+  margin-top: 100px;
+
+    .contact-us-form-container {
+        padding-right: 40px;
+    }
+
+    .contact-detail-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+    background-color: antiquewhite;
+    }
+
+    button {
+        margin-top: 30px;
+    }
+
+    .form-group {
+        margin-top: 20px;
+    }
+}
+
