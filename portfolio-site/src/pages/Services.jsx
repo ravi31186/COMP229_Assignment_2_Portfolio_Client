@@ -2,6 +2,8 @@ import './Services.css'
 import dev1 from "../assets/dev1.png";
 import dev2 from "../assets/dev2.png";
 import dev3 from "../assets/dev3.png";
+import React, { useEffect, useState } from 'react';
+import { api } from "../lib/api"
 
 /*
 File Name: services.js
