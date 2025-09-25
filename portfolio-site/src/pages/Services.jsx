@@ -29,6 +29,7 @@ export default function Services() {
         }, []);
     
     const servicesArray = services?.services ?? [];
+    debugger;
 
     return (
         <>
@@ -41,9 +42,9 @@ export default function Services() {
             </div>
             <h4>{services.subHeader}</h4>
             <ul>
-                {servicesArray.map(({ title, desc }) => {
-                    <li><b>{title} :</b> {desc}</li>
-                })};
+                {servicesArray.map(({ title, desc }) => (
+                    <li key={title}><b>{title} :</b> {desc}</li>
+                ))}
             </ul>
         </div>
         </>
