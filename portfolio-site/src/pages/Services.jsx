@@ -39,7 +39,7 @@ export default function Services() {
                 <img src={dev2} alt="dev2 Image"></img>
                 <img src={dev3} alt="dev3 Image"></img>
             </div>
-            <h4>{services.header}</h4>
+            <h4>{services.subHeader}</h4>
             <ul>
                 {servicesArray.map(({ title, desc }) => {
                     <li><b>{title} :</b> {desc}</li>
